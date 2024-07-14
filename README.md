@@ -59,7 +59,7 @@ In your command prompt download the repo with the commands:
 ## Deployment
 
 
-1. Create a `Git repository` for your Flask application:
+A. **Create a `Git repository` for your Flask application**🥇
 
  - Create a `new Git repository` on GitHub or another code hosting provider.
 
@@ -72,7 +72,7 @@ In your command prompt download the repo with the commands:
 NB: Add `DockerHub Credits` (Add your DockerHub credentials in Jenkins Credits.)
 
 
-2. Configure Jenkins:
+B. **Configure Jenkins**🥈
 
 - Access the Jenkins web interface.
 
@@ -87,7 +87,7 @@ NB: Add `DockerHub Credits` (Add your DockerHub credentials in Jenkins Credits.)
 - Set Git credentials if necessary.
 
 
-3. Create a build pipeline:
+C. **Create a build pipeline**🥉
 
 - Select the `Pipeline` tab.
 
@@ -98,24 +98,31 @@ NB: Add `DockerHub Credits` (Add your DockerHub credentials in Jenkins Credits.)
 - Paste the `Jenkinsfile` script from this git repository into the script editor.
 
 
-4. Save and run the pipeline:
+D. **Save and run the pipeline**:
 
 - Save the Jenkins pipeline.
 
 - Start the pipeline `manually` or configure a trigger to run `automatically` every time you push code to the Git repository.
 
-A. `Manually deployed`:
+D-1. `Manually deployed`:
 - Access the Jenkins web interface.
+  
 - Select your Flask project.
+  
 - Click the “Build Now” button to launch the pipeline manually.
 
-B. `Automatic deployment`:
+D-2. `Automatic deployment`:
 - Configure a webhook in your code hosting provider (GitHub, GitLab, etc.) to send a notification to Jenkins whenever you push code to the repository.
+  
 - Jenkins will automatically trigger the pipeline when it receives a webhook notification.
 
 **```Conclusion```**
 
 You now have `a working CI-CD pipeline` for a `Flask` ​​application using `Jenkins and Docker`. This pipeline will build your Docker image, run tests, push the image to DockerHub and deploy the application to the staging or production environment.
+
+
+Documentation Jenkins: https://www.jenkins.io/doc/
+
 
 ## Authors
 
